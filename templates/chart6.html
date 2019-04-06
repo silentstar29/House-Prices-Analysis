@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>House Prices</title>
+
+  <!-- D3 & Plotly -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>  
+
+  <!-- Bootstrap core CSS -->
+  <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">House Prices</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/chart1">Results
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/under_the_hood">Under the Hood</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/meet_the_team">Meet the team</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5">Machine Learning Model: Results</h1>
+        <ul class="list-unstyled">
+          <li>Please use the dropdown menu below to compare our train and model results!</li>
+          <img src="https://9to5mac.com/wp-content/uploads/sites/6/2016/03/end.png" width=1000 height=40px>
+        </ul>
+        <div class="dropdown">
+          <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Results
+          </button>
+          <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+            <a class="dropdown-item" href="/chart1">Sale Price vs. Year Built</a>
+            <a class="dropdown-item" href="/chart2">Sale Price vs. Overall Quality</a>
+            <a class="dropdown-item" href="/chart3">Sale Price vs. Total Basement Square Footage</a>
+            <a class="dropdown-item" href="/chart4">Sale Price vs. Ground Living Area</a>
+            <a class="dropdown-item" href="/chart5">Sale Price vs. Garage Area</a>
+            <a class="dropdown-item" href="/chart6">Sale Price vs. Total Rooms Above Ground</a>
+            <a class="dropdown-item" href="/chart7">Sale Price vs. Year Remodeling Added</a>
+            <a class="dropdown-item" href="/chart8">Sale Price vs. Full Baths</a>
+            <a class="dropdown-item" href="/chart9">Sale Price vs. First Floor Square Feet</a>
+            <a class="dropdown-item" href="/chart10">Sale Price vs. Garage Size(No. of Cars)</a>
+          </div>
+        </div>
+        <div id=chart></div>  
+        <!-- JavaScript for graphs -->
+        <script src="../static/js/chart6.js"></script>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="static/jquery/jquery.min.js"></script>
+  <script src="static/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <title>House Prices</title>
+
+  <!-- D3 & Plotly -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+  <!-- Bootstrap core CSS -->
+  <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
+    <div class="container">
+      <a class="navbar-brand" href="/">House Prices</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/chart1">Results</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="/under_the_hood">Under the Hood</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="/meet_the_team">Meet the team
+              <span class="sr-only">(current)</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12 text-center">
+        <h1 class="mt-5">Meet the Team!</h1>
+        <ul class="list-unstyled">
+          <li>This project is proudly brought to you by the following Data Scientists:</li>
+          <img src="https://9to5mac.com/wp-content/uploads/sites/6/2016/03/end.png" width=1000 height=40px>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="card col-sm-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQjfuFK5aqUGY0xnTAR4u5IerjvHBnKNjXN3Fiwpn3yNjL1noU6" class="card-img-top"
+          alt="RAbnavi">
+        <div class="card-body">
+          <p class="card text-center">Ryan Abnavi</p>
+        </div>
+      </div>
+      <div class="card col-sm-3">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSdOFQVJtyQ2kteC2kIzzs0eCWu8t85tAUFa5_FayThtMsh0n1R" class="card-img-top"
+          alt="DCenta">
+        <div class="card-body">
+          <p class="card text-center">David Centa</p>
+        </div>
+      </div>
+      <div class="card col-sm-3">
+        <img src="data:image/png;base64,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"
+          class="card-img-top" alt="AMatyakubova">
+        <div class="card-body">
+          <p class="card text-center">Aygul Matyakubova</p>
+        </div>
+      </div>
+      <div class="card col-sm-3">
+        <img src="data:image/png;base64,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"
+          class="card-img-top" alt="JLujan">
+        <div class="card-body">
+          <p class="card text-center">Jose Lujan</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+
+  </div>
+  </div>
+  </div>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="static/jquery/jquery.min.js"></script>
+  <script src="static/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
