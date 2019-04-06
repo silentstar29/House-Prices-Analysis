@@ -9,4 +9,6 @@ Ask a home buyer to describe their dream house, and they probably won't begin wi
 
 With 79 explanatory variables describing (almost) every aspect of residential homes in Ames, Iowa, this project aims to predict the final price of each home.
 
-Project built using Flask, D3.js, Ploty.js, Bootstrap and machine learning libraries 
+Project built using Flask, D3.js, Ploty.js, Bootstrap and machine learning libraries sklearn, xgboost, lightgbm & vecstack.
+
+This project is proudly brought to you by: Ryan Abnavi, David Centa, Aygul Matyakubova and Jose Lujan
