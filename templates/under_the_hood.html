@@ -12,7 +12,7 @@
 
   <!-- D3 & Plotly -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/4.13.0/d3.min.js"></script>
-  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>  
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 
   <!-- Bootstrap core CSS -->
   <link href="static/bootstrap/css/bootstrap.min.css" rel="stylesheet">
@@ -25,7 +25,8 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
       <a class="navbar-brand" href="/">House Prices</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive"
+        aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarResponsive">
@@ -58,38 +59,47 @@
           <li>Wondering how this project was built? Find out below!</li>
           <img src="https://9to5mac.com/wp-content/uploads/sites/6/2016/03/end.png" width=1000 height=40px>
         </ul>
-      
-      <div class="col-12 col-md-12">
-        <div class="col-md-1"></div>
-        <div class="panel panel-default">
-        <div class="panel-body">
-        <h2> Pearson Correlation Matrix </h2>
-        <img src="./static/img/pearson.png" width=65% class="responsive gap-below">
-        
-        <div class="row" style = "padding-bottom: 20px">
-        <div class="col-6 col-med-6">
-        <h3> Histogram of Sale Price Train Dataset </h3>
-        <hr>
-        <img src="./static/img/train.png" width="89%" class="responsive gap-below" style = "padding-right: 30px">
+
+        <div class="col-12 col-md-12">
+          <div class="col-md-1"></div>
+          <div class="panel panel-default">
+            <div class="panel-body">
+              <h2> Pearson Correlation Matrix </h2>
+              <hr>
+              <p>Running a Pearson correlation matrix on the data to find the parameters that have the largest impact on Sale
+                Price will help prioritize the data and assist with the most meaninguful visualizations.</p>
+              <img src="./static/img/pearson.png" width=75% class="responsive gap-below">
+              <h2>Conversion to log10</h2>
+              <hr>
+              <p>Converting the data to log10 was found to decrease sigma, which helps improve the accuracy of the model.
+                  Once the model has been completed, the results should be transformed again.</p>
+              <div class="row" style="padding-bottom: 20px">
+                <div class="col-6 col-med-6">
+                  <h3> Histogram of Sale Price Train Dataset </h3>
+                  <hr>
+                  <img src="./static/img/train.png" width="89%" class="responsive gap-below" style="padding-right: 30px">
+                  <p>Original data</p>
+                </div>
+                <div class="col-6 col-med-6">
+                  <h3> Histogram of Sale Price Train Dataset </h3>
+                  <hr>
+                  <img src="./static/img/train1.png" width="85%" class="responsive gap-left gap-below">
+                  <p>log10 Conversion</p>
+                </div>
+              </div>
+              <h3> Missing Data Ratio </h3>
+              <hr>
+              <p>The missing data was examined to better understand the impact of the parameters on the final prediction.</p>
+              <div class="col-12 col-md-12" style="padding-bottom: 30px">
+                <img src="./static/img/missing_data.png" width=65% class="responsive gap-below">
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="col-6 col-med-6">
-        <h3> Histogram of Sale Price Train Dataset </h3>
-        <hr>
-        <img src="./static/img/train1.png"  width="85%" class="responsive gap-left gap-below">
-        </div>
-        </div>
-        <h3> Missing Data Ratio </h3>
-        <hr>
-        <div class="col-12 col-md-12" style = "padding-bottom: 30px">
-        <img src="./static/img/missing_data.png" width=65% class="responsive gap-below">
-        </div>
-        </div>
-        </div>
-        </div>
-        </div>
-        
       </div>
+
     </div>
+  </div>
   </div>
 
   <!-- Bootstrap core JavaScript -->
