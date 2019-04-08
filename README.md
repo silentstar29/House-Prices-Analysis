@@ -4,7 +4,7 @@
 
 <p>For more information, please visit the following link :<a href="https://www.kaggle.com/c/house-prices-advanced-regression-techniques" target="_blank">House Prices: Advanced Regression Techniques</a></p>
 
-This is our Project deployed on Heroku app: :<a href="https://house-prices-analysis.herokuapp.com/"</a>
+<p>This is our Project deployed on Heroku app :<a href="https://house-prices-analysis.herokuapp.com/"target="_blank">House Prices Analysis</a></p>
 
 Ask a home buyer to describe their dream house, and they probably won't begin with the height of the basement ceiling or the proximity to an east-west railroad. But this dataset proves that much more influences price negotiations than the number of bedrooms or a white-picket fence.
 
